@@ -9,6 +9,10 @@ Desktop: de 992 até 1200px
 Grandes telas: +1200px
 */
 
+/* 
+COR: #2CCB69
+*/
+
 * {
     padding: 0px;
     margin: 0px;
@@ -32,5 +36,21 @@ Grandes telas: +1200px
         position: absolute;
         top: 0;
         left: 0;
+    }
+
+    .jl-logo {
+        width: 74px;
+        height: 110px;
+        background-color: #2CCB69;
+        float: left;
+        margin-left: 60px;
+        border-radius: 0 0 37px 0;
+    }
+
+    .jl-logo > img {
+        width: 47px;
+        height: 40px;
+        display: block;
+        margin: 55px auto 0 auto;
     }
 }
