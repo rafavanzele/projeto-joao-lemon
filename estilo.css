@@ -133,3 +133,39 @@ COR: #2CCB69
         width: 100%;
     }
 }
+
+
+/*CLASSES UTILITÁRIAS*/
+
+.jl-texto-verde {
+    color: #2CCB69;
+}
+
+.jl-texto-dark-cinza {
+    color: #4D4C4C;
+}
+
+.jl-light-cinza {
+    color: #BCBCBC;
+}
+
+.jl-texto-preto {
+    color: #000000;
+}
+
+
+.jl-bg-verde {
+    background-color: #2CCB69;
+}
+
+.jl-bg-dark-cinza {
+    background-color: #4D4C4C;
+}
+
+.jl-bg-light-cinza {
+    background-color: #BCBCBC;
+}
+
+.jl-bg-preto {
+    background-color: #000000;
+}
