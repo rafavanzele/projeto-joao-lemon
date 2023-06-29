@@ -63,6 +63,26 @@ COR: #2CCB69
     .jl-menu {
         display: none;
     }
+
+    .jl-botao-contato {
+        width: 48px;
+        height: 48px;
+        display: block;
+        background-color: #2CCB69;
+        background-image: url('imagens/icone-email-fechar.png');
+        background-repeat: no-repeat;
+        background-position: top center;
+        border-radius: 50%;
+        position: fixed;
+        bottom: 45px;
+        right: 45px;
+        z-index: 200;
+        transition: all .2s ease-out;
+    }
+
+    .jl-botao-contato:hover {
+        background-position-y: -45px;
+    }
 }
 
 
@@ -109,7 +129,7 @@ COR: #2CCB69
         transition: all .2s ease-out;
     }
 
-    .jl-menu a:hover::before {
+    .jl-menu a:hover:before {
         width: 100%;
     }
 }
