@@ -23,6 +23,12 @@ COR: #2CCB69
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+p {
+    font-family: 'Open Sans', 'sans-serif';
 }
 
 @media screen and (min-width: 320px) {
@@ -83,6 +89,22 @@ COR: #2CCB69
     .jl-botao-contato:hover {
         background-position-y: -45px;
     }
+
+    .jl-contato-info {
+        width: 245px;
+        height: 165px;
+        padding: 25px;
+        position: fixed;
+        bottom: 115px;
+        right: 65px;
+        z-index: 200;
+    }
+
+    .jl-social-links {
+        width: 100%;
+        height: 45px;
+        display: block;
+    }
 }
 
 
@@ -136,6 +158,11 @@ COR: #2CCB69
 
 
 /*CLASSES UTILITÁRIAS*/
+
+.jl-titulo {
+    font-family: 'Abril Fatface', serif;
+    font-weight: normal;
+}
 
 .jl-texto-verde {
     color: #2CCB69;
