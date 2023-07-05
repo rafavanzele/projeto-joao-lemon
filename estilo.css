@@ -32,12 +32,28 @@ p {
 }
 
 @media screen and (min-width: 320px) {
-    .jl-page-wrapper {
+    .jl-page-wrapper, .jl-preloader {
         width: 100%;
         height: 100vh;
         display: block;
         background-color: #1C1C1C;
         border: 30px solid black
+    }
+
+    .jl-preloader {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+
+    .jl-preloader-inner {
+        margin-top: -45px;
     }
 
     .jl-topbar {
@@ -236,6 +252,47 @@ p {
 
 .jl-bg-preto {
     background-color: #000000;
+}
+
+
+.jl-mrg-15 {
+    margin: 15px;
+}
+
+.jl-mrg-top-15 {
+    margin-top: 15px;
+}
+
+.jl-mrg-right-15 {
+    margin-right: 15px;
+}
+
+.jl-mrg-bottom-15 {
+    margin-bottom: 15px;
+}
+
+.jl-mrg-left-15 {
+    margin-left: 15px;
+}
+
+.jl-padding-15 {
+    padding: 15px;
+}
+
+.jl-padding-top-15 {
+    padding-top: 15px;
+}
+
+.jl-padding-right-15 {
+    padding-right: 15px;
+}
+
+.jl-padding-bottom-15 {
+    padding-bottom: 15px;
+}
+
+.jl-padding-left-15 {
+    padding-left: 15px;
 }
 
 
