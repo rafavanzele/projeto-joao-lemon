@@ -84,11 +84,12 @@ p {
         right: 45px;
         z-index: 200;
         transition: all .2s ease-out;
+        cursor: pointer;
     }
 
-    .jl-botao-contato:hover {
+    /*.jl-botao-contato:hover {
         background-position-y: -45px;
-    }
+    }  ESSE ROVER EVOLUIU PARA UMA FUNÇÃO EM JS*/
 
     .jl-contato-info {
         width: 245px;
@@ -98,6 +99,7 @@ p {
         bottom: 115px;
         right: 65px;
         z-index: 200;
+        display: none;
     }
 
     .jl-contato-info-inner {
@@ -234,4 +236,15 @@ p {
 
 .jl-bg-preto {
     background-color: #000000;
+}
+
+
+/*CLASSES DE COMPORTAMENTO*/
+
+.jl-aberto {
+    display: block;
+}
+
+.jl-mudar-icone {
+    background-position-y: -45px;
 }
