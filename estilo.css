@@ -170,6 +170,16 @@ p {
         right: 0;
         background: transparent url('imagens/cantoneira.png') no-repeat;
     }
+
+    .jl-display-texto {
+        margin-top: 10%;
+    }
+
+    #jl-home-apresentacao {
+        background-image: url('imagens/joao-lemon-foto-home.png');
+        background-repeat: no-repeat;
+        background-position: 50% top;
+    }
 }
 
 
@@ -219,6 +229,7 @@ p {
     .jl-menu a:hover:before {
         width: 100%;
     }
+
 }
 
 
@@ -227,6 +238,10 @@ p {
 .jl-titulo {
     font-family: 'Abril Fatface', serif;
     font-weight: normal;
+}
+
+.jl-titulo-grande {
+    font-size: 3em;
 }
 
 .jl-texto-verde {
@@ -305,8 +320,6 @@ p {
 
 .jl-altura-total {
     height: 100vh;
-    background-color: lightgrey;
-    border-bottom: 5px solid red;
 }
 
 .jl-section01 {
