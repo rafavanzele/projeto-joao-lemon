@@ -332,6 +332,23 @@ p {
 
 }
 
+/*BOTÕES*/
+
+.jl-botao {
+    display: table;
+    padding: 0 35px;
+    background-color: #2CCB69;
+    height: 45px;
+    color: #1C1C1C;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 45px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 23px;
+    margin: 5px auto;
+}
+
 
 /*CLASSES UTILITÁRIAS*/
 
