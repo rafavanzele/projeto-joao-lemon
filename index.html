@@ -27,13 +27,51 @@
         </div>
 
         <div class="jl-modal-body">
-            <p class="jl-light-cinza">Por favor informe os dados abaixo e entraremos em contato assim que possível</p>
-            <p>
-                <form action="cadastro.php" method="post" autocomplete="on" class="jl-form">
-                    <label for="jl-nome">Nome</label>
-                    <input type="text" name="Nome" id="jl-nome" class="jl-campo">
-                </form>
-            </p>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="jl-light-cinza">Por favor informe os dados abaixo e entraremos em contato assim que possível</p>
+                </div>
+            </div>
+
+            <div class="row jl-mrg-top-15">
+                <div class="col-sm-12">
+                    <form action="cadastro.php" method="post" autocomplete="on" class="jl-form">
+                        <div class="row jl-mrg-bottom-15">
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-nome" class="jl-light-cinza">Nome</label>
+                                <input type="text" name="Nome" id="jl-nome" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-email" class="jl-light-cinza">Email</label>
+                                <input type="email" name="Email" id="jl-email" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-fone" class="jl-light-cinza">Telefone</label>
+                                <input type="email" name="Fone" id="jl-fone" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-site" class="jl-light-cinza">Site</label>
+                                <input type="text" name="site" id="jl-site" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 jl-mrg-bottom-15">
+                                <label for="jl-msg" class="jl-light-cinza">Descreva abaixo o projeto para o qual você precisa de orçamento</label><br>
+                                <textarea name="msg" id="jl-msg" rows="6" class="jl-textarea" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end">
+                            <div class="col-sm-12 col-md-6">
+                                <input type="submit" class="jl-botao jl-botao-grande jl-botao-verde jl-botao-block" value="Enviar">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 

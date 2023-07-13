@@ -27,7 +27,7 @@ COR: #2CCB69
     -moz-osx-font-smoothing: grayscale
 }
 
-p {
+p, label {
     font-family: 'Open Sans', 'sans-serif';
 }
 
@@ -131,14 +131,14 @@ p {
         padding: 30px;
         border-radius: 0 30px 30px 30px;
         position: fixed;
-        top: 15%;
+        top: 10%;
         left: 0;
         right: 0;
         margin: 0 auto;
         z-index: 1200;
     }
 
-    .jl-modal-header {
+    .jl-modal-header, .jl-modal-body, .jl-form {
         width: 100%;
         display: table;
         position: relative;
@@ -157,6 +157,26 @@ p {
         position: absolute;
         top: -15px;
         right: -15px;
+    }
+
+    .jl-form label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        display: inline-block;
+    }
+
+    .jl-campo, .jl-textarea {
+        width: 100%;
+        background-color: #2f2f2f;
+        border-radius: 4px;
+        color: #ffffff;
+        border: none;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    .jl-campo {
+        height: 45px;
     }
 
     .jl-topbar {
@@ -391,6 +411,11 @@ p {
     border: none;
     transition: all 0.2s ease-out;
     text-transform: lowercase;
+}
+
+.jl-botao-block {
+    display: block;
+    width: 100%;
 }
 
 .jl-botao-peq {
