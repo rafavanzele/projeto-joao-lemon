@@ -1,5 +1,6 @@
 //DECLARANDO VARIÁVEIS
 var btnContato = document.querySelector('.jl-botao-contato');
+var toggleModal = document.querySelectorAll('.jl-toggle-modal')
 
 
 //PÁGINA PRELOADER
@@ -22,3 +23,17 @@ btnContato.addEventListener('click', function() {
 
     this.classList.toggle('jl-mudar-icone');
 });
+
+
+
+//ABRINDO E FECHANDO O MODAL DE ORÇAMENTO
+for(var i = 0; i < toggleModal.length; i++) {
+    toggleModal[i].addEventListener('click', function() {
+        var overlay = document.querySelector('.jl-overlay');
+        var modalOrcamento = document.querySelector('#jl-modal-orcamento');
+
+        overlay.classList.toggle('jl-aberto');
+        modalOrcamento.classList.toggle('jl-aberto');
+        modalOrcamento.classList.toggle('jl-slide-top-in');
+    });
+}
