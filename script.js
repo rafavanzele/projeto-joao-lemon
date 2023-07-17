@@ -37,3 +37,15 @@ for(var i = 0; i < toggleModal.length; i++) {
         modalOrcamento.classList.toggle('jl-slide-top-in');
     });
 }
+
+
+//ANIMANDO ELEMENTOS ON SCROLL COM WAYPOINTS
+
+var myScrollDown = document.querySelector('.jl-role-abaixo');
+var waypoint = new Waypoint({
+    element: myScrollDown,
+    handler: function() {
+     myScrollDown.classList.toggle('jl-fade-out');
+    },
+    offset: '60%'
+  });
