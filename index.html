@@ -144,7 +144,7 @@
                 <div class="row">
                     <div class="col-sm-2">
                         <div class="jl-portfolio-navigator">
-                            <div class="jl-item-contador">
+                            <div class="jl-navigator-contador">
                                 <span class="jl-texto-verde">01</span>
                             </div>
                             
@@ -156,8 +156,16 @@
                                 <a href="#"></a>
                             </nav>
 
-                            <div class="jl-itens-next-prev">
-                                <span></span>
+                            <div class="jl-itens-next-prev jl-no-radius-left">
+                                <div class="jl-item-prev">
+                                    <ion-icon name="caret-back-outline"></ion-icon>
+                                </div>
+
+                                <div class="jl-itens-contador"><span>01</span>/<span>05</span></div>
+
+                                <div class="jl-item-next">
+                                    <ion-icon name="caret-forward-outline"></ion-icon>
+                                </div>
                             </div>
 
                         </div>
@@ -168,10 +176,9 @@
     </div>
 
 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
-    <script src="script.js">
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
