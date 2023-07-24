@@ -49,3 +49,32 @@ var waypoint = new Waypoint({
     },
     offset: '60%'
   });
+
+
+
+
+  // PORTFÓLIO SLIDER
+
+  //DECLARANDO VARIÁVEIS DO SLIDER
+  var sliderContainer = document.querySelector('.jl-slider-container');
+  var sliderList = document.querySelector('.jl-slider-list');
+  var sliderItem = document.querySelectorAll('.jl-slider-item');
+  var sliderListWidth = null;
+
+  //CAPTURANDO LARGURAS INDIVIDUAIS
+  var containerWidth = sliderContainer.parentElement.offsetWidth;
+
+  //PASSANDO LARGURAS DINÂMICAS
+  sliderContainer.style.width = containerWidth + 'px';
+
+  for(var p = 0; p < sliderItem.length; p++) {
+    sliderItem[p].style.width = containerWidth + 'px';
+
+    var sliderItemWidth = sliderItem[p].offsetWidth; 
+
+    sliderListWidth += sliderItemWidth;
+  }
+
+  sliderList.style.width = sliderListWidth + 'px';
+
+  //FAZENDO ANIMAÇÃO DO SLIDER ONCLICK

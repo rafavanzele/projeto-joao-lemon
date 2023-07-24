@@ -451,22 +451,23 @@ p, label {
       }
 
     .jl-slider-container {
-        width: 100%;
         background-color: white;
+        display: block;
+        overflow: hidden;
     }
 
     .jl-slider-list {
         width: auto;
-        height: 400px;
+        height: 500px;
         display: block;
         background-color: lightskyblue;
         list-style: none;
     }
 
     .jl-slider-item {
-        display: inline-block;
-        width: 200px;
-        height: 200px;
+        display: block;
+        float: left;
+        height: 400px;
     }
 }
 
@@ -720,7 +721,7 @@ p, label {
     background-color: yellow;
 }
 
-.purple {
+.orange {
     background-color: orange;
 }
 
