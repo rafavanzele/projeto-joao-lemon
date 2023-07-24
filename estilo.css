@@ -449,6 +449,25 @@ p, label {
     ion-icon {
         font-size: 25px;
       }
+
+    .jl-slider-container {
+        width: 100%;
+        background-color: white;
+    }
+
+    .jl-slider-list {
+        width: auto;
+        height: 400px;
+        display: block;
+        background-color: lightskyblue;
+        list-style: none;
+    }
+
+    .jl-slider-item {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 
@@ -687,4 +706,24 @@ p, label {
 .jl-no-radius-right {
    border-top-right-radius: 0;
    border-bottom-right-radius: 0; 
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.purple {
+    background-color: orange;
+}
+
+.pink {
+    background-color: rgb(219, 86, 108);
 }
