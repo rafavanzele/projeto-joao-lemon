@@ -88,8 +88,30 @@ var waypoint = new Waypoint({
   var nextItem = document.querySelector('.jl-item-next');
   var sliderPos = 0;
 
-  nextItem.addEventListener('click', function(){
+  nextItem.addEventListener('click', function(){  //lógica para animar botão next
+    var lastItem = sliderListWidth - containerWidth;
+
+    if ((-1 * (sliderPos) == lastItem)) {
+        return;
+    }
+
+
     sliderPos -= containerWidth;
+    anime({
+        targets: sliderList,
+        translateX: sliderPos
+      });
+  });
+
+
+  prevItem.addEventListener('click', function(){  //lógica para animar botão prev
+    
+    if (sliderPos == 0) {
+        return;
+    }
+
+
+    sliderPos += containerWidth;
     anime({
         targets: sliderList,
         translateX: sliderPos
