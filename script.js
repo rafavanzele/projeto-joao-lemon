@@ -61,9 +61,12 @@ var waypoint = new Waypoint({
   var sliderItem = document.querySelectorAll('.jl-slider-item');
   var sliderListWidth = null;
 
+  
   //CAPTURANDO LARGURAS INDIVIDUAIS
   var containerWidth = sliderContainer.parentElement.offsetWidth;
 
+  
+ 
   //PASSANDO LARGURAS DINÂMICAS
   sliderContainer.style.width = containerWidth + 'px';
 
@@ -77,4 +80,18 @@ var waypoint = new Waypoint({
 
   sliderList.style.width = sliderListWidth + 'px';
 
+  
+ 
   //FAZENDO ANIMAÇÃO DO SLIDER ONCLICK
+
+  var prevItem = document.querySelector('.jl-item-prev');
+  var nextItem = document.querySelector('.jl-item-next');
+  var sliderPos = 0;
+
+  nextItem.addEventListener('click', function(){
+    sliderPos -= containerWidth;
+    anime({
+        targets: sliderList,
+        translateX: sliderPos
+      });
+  });
