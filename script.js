@@ -88,7 +88,10 @@ var waypoint = new Waypoint({
   var nextItem = document.querySelector('.jl-item-next');
   var sliderPos = 0;
 
-  nextItem.addEventListener('click', function(){  //lógica para animar botão next
+  
+  //HANDLERS
+  //Animação Next slide (refatoração)
+  var nextSlideAnim = function() {
     var lastItem = sliderListWidth - containerWidth;
 
     if ((-1 * (sliderPos) == lastItem)) {
@@ -101,11 +104,10 @@ var waypoint = new Waypoint({
         targets: sliderList,
         translateX: sliderPos
       });
-  });
+  }
 
-
-  prevItem.addEventListener('click', function(){  //lógica para animar botão prev
-    
+  //Animação Prev slide (refatoração)
+  var prevSlideAnim = function() {
     if (sliderPos == 0) {
         return;
     }
@@ -116,4 +118,17 @@ var waypoint = new Waypoint({
         targets: sliderList,
         translateX: sliderPos
       });
+  }
+
+
+
+
+  
+  nextItem.addEventListener('click', function(){
+    nextSlideAnim();
+  });
+
+
+  prevItem.addEventListener('click', function(){
+    prevSlideAnim();
   });
