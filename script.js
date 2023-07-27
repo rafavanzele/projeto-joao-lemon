@@ -59,7 +59,16 @@ var waypoint = new Waypoint({
   var sliderContainer = document.querySelector('.jl-slider-container');
   var sliderList = document.querySelector('.jl-slider-list');
   var sliderItem = document.querySelectorAll('.jl-slider-item');
+  const sliderTotalItems = sliderItem.length;
   var sliderListWidth = null;
+  var prevItem = document.querySelector('.jl-item-prev');
+  var nextItem = document.querySelector('.jl-item-next');
+  var sliderPos = 0;
+  var currentSlide = document.querySelector('.jl-current-slide');
+  var totalSlide = document.querySelector('.jl-total-slide'); 
+
+  
+
 
   
   //CAPTURANDO LARGURAS INDIVIDUAIS
@@ -84,9 +93,7 @@ var waypoint = new Waypoint({
  
   //FAZENDO ANIMAÇÃO DO SLIDER ONCLICK
 
-  var prevItem = document.querySelector('.jl-item-prev');
-  var nextItem = document.querySelector('.jl-item-next');
-  var sliderPos = 0;
+  
 
   
   //HANDLERS
@@ -122,8 +129,21 @@ var waypoint = new Waypoint({
 
 
 
+  //COUNTER FORMATER (contador de slides)
 
-  
+  var counterFormater = function(n) {
+    if (n < 10) {
+        return '0' + n;
+    } else {
+        return n;
+    }
+  }
+
+
+  //ACTIONS
+
+  totalSlide.innerHTML = counterFormater(sliderTotalItems);
+
   nextItem.addEventListener('click', function(){
     nextSlideAnim();
   });
