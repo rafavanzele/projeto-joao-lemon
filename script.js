@@ -66,6 +66,7 @@ var waypoint = new Waypoint({
   var sliderPos = 0;
   var currentSlide = document.querySelector('.jl-current-slide');
   var totalSlide = document.querySelector('.jl-total-slide'); 
+  var currentCounter = 1;
 
   
 
@@ -140,15 +141,35 @@ var waypoint = new Waypoint({
   }
 
 
+  //COUNTER ADD
+  var counterAdd = function() {
+      if (currentCounter >= 0 && currentCounter < sliderTotalItems) {
+        currentCounter++;
+        currentSlide.innerHTML = counterFormater(currentCounter);
+      }
+  }
+
+  //COUNTER REMOVE
+  var counterRemove = function() {
+    if (currentCounter > 1 && currentCounter <= sliderTotalItems) {
+      currentCounter--;
+      currentSlide.innerHTML = counterFormater(currentCounter);
+    }
+}
+
+
   //ACTIONS
 
   totalSlide.innerHTML = counterFormater(sliderTotalItems);
+  
 
   nextItem.addEventListener('click', function(){
     nextSlideAnim();
+    counterAdd();
   });
 
 
   prevItem.addEventListener('click', function(){
     prevSlideAnim();
+    counterRemove();
   });
