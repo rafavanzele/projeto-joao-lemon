@@ -67,6 +67,7 @@ var waypoint = new Waypoint({
   var currentSlide = document.querySelector('.jl-current-slide');
   var totalSlide = document.querySelector('.jl-total-slide'); 
   var currentCounter = 1;
+  var navItems = document.querySelectorAll('.jl-item-navigator a');
 
   
 
@@ -158,6 +159,27 @@ var waypoint = new Waypoint({
 }
 
 
+//SET ACTIVE NAV
+var setActiveNav = function() {
+    for (var nv = 0; nv < navItems.length; nv++) {
+
+      let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'));
+      if (myNavNum == currentCounter) {
+        navItems[nv].classList.add('jl-item-ativo');
+      }
+    }
+}
+
+
+var changeActive = function() {
+    for (var rmv = 0; rmv < navItems.length; rmv++) {
+      navItems[rmv].classList.remove('jl-item-ativo');
+    }
+
+    setActiveNav();
+}
+
+
   //ACTIONS
 
   totalSlide.innerHTML = counterFormater(sliderTotalItems);
@@ -166,10 +188,12 @@ var waypoint = new Waypoint({
   nextItem.addEventListener('click', function(){
     nextSlideAnim();
     counterAdd();
+    changeActive();
   });
 
 
   prevItem.addEventListener('click', function(){
     prevSlideAnim();
     counterRemove();
+    changeActive();
   });
