@@ -68,6 +68,7 @@ var waypoint = new Waypoint({
   var totalSlide = document.querySelector('.jl-total-slide'); 
   var currentCounter = 1;
   var navItems = document.querySelectorAll('.jl-item-navigator a');
+  var navCounter = document.querySelector('.jl-navigator-contador span');
 
   
 
@@ -147,6 +148,7 @@ var waypoint = new Waypoint({
       if (currentCounter >= 0 && currentCounter < sliderTotalItems) {
         currentCounter++;
         currentSlide.innerHTML = counterFormater(currentCounter);
+        navCounter.innerHTML = counterFormater(currentCounter);
       }
   }
 
@@ -155,6 +157,7 @@ var waypoint = new Waypoint({
     if (currentCounter > 1 && currentCounter <= sliderTotalItems) {
       currentCounter--;
       currentSlide.innerHTML = counterFormater(currentCounter);
+      navCounter.innerHTML = counterFormater(currentCounter);
     }
 }
 
