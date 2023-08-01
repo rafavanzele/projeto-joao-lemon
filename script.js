@@ -166,6 +166,11 @@ var setActiveNav = function() {
       let myNavNum = parseInt(navItems[nv].getAttribute('data-nav'));
       if (myNavNum == currentCounter) {
         navItems[nv].classList.add('jl-item-ativo');
+
+        anime({
+          targets: '.jl-item-ativo',
+          width: 60
+        });
       }
     }
 }
@@ -174,6 +179,11 @@ var setActiveNav = function() {
 var changeActive = function() {
     for (var rmv = 0; rmv < navItems.length; rmv++) {
       navItems[rmv].classList.remove('jl-item-ativo');
+
+      anime({
+        targets: navItems[rmv],
+        width: 20
+      });
     }
 
     setActiveNav();
@@ -183,6 +193,11 @@ var changeActive = function() {
   //ACTIONS
 
   totalSlide.innerHTML = counterFormater(sliderTotalItems);
+
+  anime({
+    targets: '.jl-item-ativo',
+    width: 60
+  });
   
 
   nextItem.addEventListener('click', function(){

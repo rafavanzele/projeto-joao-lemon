@@ -407,7 +407,6 @@ p, label {
     }
 
     .jl-item-navigator a.jl-item-ativo {
-        width: 60px;
         background-color: #2CCB69;
     }
 
