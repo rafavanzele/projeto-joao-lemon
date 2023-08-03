@@ -189,7 +189,7 @@ var setActiveSlide = function() {
     
     if (mySlideNum == currentCounter) {
       sliderItem[sld].classList.add('jl-slide-ativo');
-      
+      sliderItem[sld].querySelector('.jl-portfolio-item-box').classList.add('jl-scale-right');
     }
   }
 }

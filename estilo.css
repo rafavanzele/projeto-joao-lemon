@@ -44,6 +44,12 @@ p, label {
     }
 }
 
+@keyframes scaleRight {
+    to {
+        transform: scaleX(1);
+    }
+}
+
 @keyframes lineDown {
     0% {
         transform: scale(1, 0);
@@ -477,9 +483,21 @@ p, label {
     .jl-portfolio-item-thumb {
         margin-top: 40px;
         width: 100%;
-        background-color: #2c2c2c;
         display: table;
         padding: 35px 0;
+        position: relative;
+    }
+
+    .jl-portfolio-item-box {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #2c2c2c;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
     }
 
     .jl-portfolio-item-thumb img {
@@ -761,6 +779,10 @@ p, label {
 
 .jl-fade-out {
     animation: fadeOut 2s forwards ease-out;
+}
+
+.jl-scale-right {
+    animation: scaleRight 0.7s 0.2s forwards cubic-bezier(0,1.01,.32,1);
 }
 
 .jl-no-radius-left {
