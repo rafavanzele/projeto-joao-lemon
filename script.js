@@ -112,7 +112,8 @@ var waypoint = new Waypoint({
     sliderPos -= containerWidth;
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,.32,1)'
       });
   }
 
@@ -126,7 +127,8 @@ var waypoint = new Waypoint({
     sliderPos += containerWidth;
     anime({
         targets: sliderList,
-        translateX: sliderPos
+        translateX: sliderPos,
+        easing: 'cubicBezier(0,1.01,.32,1)'
       });
   }
 
@@ -179,6 +181,20 @@ var setActiveNav = function() {
 }
 
 
+//SET ACTIVE SLIDE
+var setActiveSlide = function() {
+  for (var sld = 0; sld < sliderItem.length; sld++) {
+
+    let mySlideNum = parseInt(sliderItem[sld].getAttribute('data-slide'));
+    
+    if (mySlideNum == currentCounter) {
+      sliderItem[sld].classList.add('jl-slide-ativo');
+      
+    }
+  }
+}
+
+
 var changeActive = function() {
     for (var rmv = 0; rmv < navItems.length; rmv++) {
       navItems[rmv].classList.remove('jl-item-ativo');
@@ -189,7 +205,13 @@ var changeActive = function() {
       });
     }
 
+
+    for (var rmvs = 0; rmvs < sliderItem.length; rmvs++) {
+      sliderItem[rmvs].classList.remove('jl-slide-ativo');
+    }
+
     setActiveNav();
+    setActiveSlide();
 }
 
 
