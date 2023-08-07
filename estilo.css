@@ -500,8 +500,14 @@ p, label {
         margin-top: 40px;
         width: 100%;
         display: table;
-        padding: 35px 0;
+        padding: 35px 0 6px 0;
         position: relative;
+    }
+
+    .jl-portfolio-item-thumb > button {
+        margin-top: 2px;
+        margin-right: 35px;
+        float: right;
     }
 
     .jl-portfolio-item-box {
@@ -589,6 +595,13 @@ p, label {
     position: relative;
 }
 
+.jl-botao ion-icon {
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
 .jl-botao-block {
     display: block;
     width: 100%;
@@ -596,6 +609,7 @@ p, label {
 
 .jl-botao-peq {
     height: 28px;
+    line-height: 28px;
     padding: 0 20px;
     border-radius: 14px;
     font-size: 11px;
@@ -603,6 +617,7 @@ p, label {
 
 .jl-botao-medio {
     height: 38px;
+    line-height: 38px;
     padding: 0 27px;
     border-radius: 19px;
     font-size: 14px;
@@ -610,6 +625,7 @@ p, label {
 
 .jl-botao-grande {
     height: 45px;
+    line-height: 45px;
     padding: 0 35px;
     border-radius: 23px;
     font-size: 16px;
