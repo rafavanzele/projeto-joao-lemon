@@ -586,6 +586,7 @@ p, label {
     border: none;
     transition: all 0.2s ease-out;
     text-transform: lowercase;
+    position: relative;
 }
 
 .jl-botao-block {
