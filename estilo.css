@@ -531,6 +531,12 @@ p, label {
         left: -35px;
         transform: scale(0);
     }
+
+
+    /*---PORTFÓLIO---*/
+    .jl-section-offset {
+        margin-top: 100px;
+    }
 }
 
 
