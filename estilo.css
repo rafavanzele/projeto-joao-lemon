@@ -481,13 +481,13 @@ p, label {
         list-style: none;
     }
 
-    .jl-slider-list .jl-slider-item {
+    .jl-slider-list .jl-portfolio-item {
         display: block;
         float: left;
         height: 400px;
         margin-top: calc(26vh - 75px);
     }
-
+    
     .jl-portfolio-list {
         list-style: none;
     }
