@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Lemon - Sobre</title>
+    <link rel="shortcut icon" href="../imagens/limao-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap-grid.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <div class="jl-preloader">
+        <div class="jl-preloader-inner">
+            <img src="../imagens/limao-loader.svg" class="jl-mrg-bottom-15" alt="#">
+            <p class="jl-light-cinza jl-mrg-top-15">Aguarde um pouquinho... Estamos preparando a limonada</p>
+        </div>
+    </div>
+
+    <div class="jl-overlay jl-toggle-modal"></div>
+
+    <div class="jl-modal jl-bg-preto" id="jl-modal-orcamento">
+        <div class="jl-modal-header">
+            <h1 class="jl-titulo jl-texto-verde">Solicite um orçamento</h1>
+            <button class="jl-close-modal jl-toggle-modal">X</button>
+        </div>
+
+        <div class="jl-modal-body">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p class="jl-light-cinza">Por favor informe os dados abaixo e entraremos em contato assim que possível</p>
+                </div>
+            </div>
+
+            <div class="row jl-mrg-top-15">
+                <div class="col-sm-12">
+                    <form action="cadastro.php" method="post" autocomplete="on" class="jl-form">
+                        <div class="row jl-mrg-bottom-15">
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-nome" class="jl-light-cinza">Nome</label>
+                                <input type="text" name="Nome" id="jl-nome" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-email" class="jl-light-cinza">Email</label>
+                                <input type="email" name="Email" id="jl-email" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-fone" class="jl-light-cinza">Telefone</label>
+                                <input type="email" name="Fone" id="jl-fone" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 jl-mrg-bottom-15">
+                                <label for="jl-site" class="jl-light-cinza">Site</label>
+                                <input type="text" name="site" id="jl-site" class="jl-campo">
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 jl-mrg-bottom-15">
+                                <label for="jl-msg" class="jl-light-cinza">Descreva abaixo o projeto para o qual você precisa de orçamento</label><br>
+                                <textarea name="msg" id="jl-msg" rows="6" class="jl-textarea" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-end">
+                            <div class="col-sm-12 col-md-6">
+                                <input type="submit" class="jl-botao jl-botao-grande jl-botao-verde jl-botao-block" value="Enviar">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="jl-topbar">
+       
+        <div class="jl-logo">
+            <img src="../imagens/jl-logo.png" alt="Logo João Lemon">
+        </div>
+
+        <nav class="jl-menu">
+            <a href="../index.html">Home</a>
+            <a href="#">Portfólio</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+    </header>
+
+    <div class="jl-contato-info jl-bg-preto jl-light-cinza">
+
+        <div class="jl-contato-info-inner">
+            
+        <h2 class="jl-titulo jl-texto-verde">Contato</h2>
+        <p>joaolemon@email.com</p>
+        <p>+55 11 99999-9999</p>
+
+        <div class="jl-social-links">
+            <a href="#"><img src="../imagens/icone-insta.png" alt="icone insta"></a>
+            <a href="#"><img src="../imagens/icone-twitter.png" alt="icone twitter"></a>
+        </div>
+
+        </div>
+
+        <div class="jl-cantoneira">
+            
+        </div>
+
+    </div>
+
+   
+    <button class="jl-botao-contato">
+
+    </button>
+
+    
+    <div class="jl-page-wrapper">
+        
+        <section class="jl-section-offset-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 blue">
+                        AAA
+                    </div>
+                    
+                    <div class="col-sm-5 orange">
+                        <div class="row">
+                            <div class="col-sm-7 yellow">a</div>
+                            <div class="col-sm-5 red">a</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../script.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
