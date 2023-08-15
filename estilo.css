@@ -539,7 +539,7 @@ p, label {
         transform: scaleX(1);
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb img, .jl-portfolio-list .jl-portfolio-item-thumb img {
+    .jl-slider-list .jl-portfolio-item-thumb img {
         width: 100%;
         max-width: 100%;
         height: auto;
@@ -549,7 +549,11 @@ p, label {
     }
 
     .jl-portfolio-list .jl-portfolio-item-thumb img {
-        transform: scale(1);
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -35px;
     }
 
 
