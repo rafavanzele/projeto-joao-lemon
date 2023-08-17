@@ -592,6 +592,15 @@ p, label {
         margin-left: 35px;
         margin-top: 5px;
     }
+
+
+
+    /*---SOBRE---*/
+
+    #jl-avatar-sobre img {
+        position: relative;
+        left: -15px;
+    }
 }
 
 
@@ -863,6 +872,42 @@ p, label {
     padding: 0 !important;
 }
 
+.jl-box-img {
+    width: 100%;
+    display: table;
+}
+
+.jl-img-responsivo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.jl-page-list {
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.jl-page-list > li {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.jl-page-list > li:before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-color: #2CCB69;
+}
 
 /*CLASSES DE COMPORTAMENTO*/
 
