@@ -288,14 +288,21 @@ p, label {
         margin-top: 7px;
     }
 
-    .jl-social {
+    .jl-social, .jl-social-links-circle .jl-social {
         width: 45px;
         height: 45px;
         display: inline-block;
     }
 
-    .jl-social-links img {
-        margin-right: 20px;
+    .jl-social-links-circle .jl-social {
+        border-radius: 50%;
+    }
+
+    .jl-social img {
+        width: 20px;
+        height: auto;
+        display: block;
+        margin: 13px auto 0;
     }
 
     .jl-cantoneira {
