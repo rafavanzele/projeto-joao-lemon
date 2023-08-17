@@ -279,19 +279,23 @@ p, label {
         line-height: 24px;
     }
 
-    .jl-social-links > a {
-        margin-top: 2px;
-        width: 45px;
+    .jl-social-links, .jl-social-links-circle {
+        width: 100%;
         height: 45px;
-        padding: 4px;
-        display: inline-block;
-        background-color: #2CCB69;
-        border-radius: 50%;
+        display: block;
+        position: relative;
+        left: 0px;
+        margin-top: 7px;
     }
 
-    .jl-social-links > a > img {
-        position: fixed;
-        bottom: 20,5%;
+    .jl-social {
+        width: 45px;
+        height: 45px;
+        display: inline-block;
+    }
+
+    .jl-social-links img {
+        margin-right: 20px;
     }
 
     .jl-cantoneira {
