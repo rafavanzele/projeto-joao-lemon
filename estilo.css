@@ -626,11 +626,16 @@ p, label {
 
 
     /*---SOBRE---*/
-
+   
     #jl-avatar-sobre img {
         position: relative;
         left: -15px;
     }
+
+
+    /*---DETALHES---*/
+
+
 }
 
 
