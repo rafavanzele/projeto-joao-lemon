@@ -635,6 +635,14 @@ p, label {
 
     /*---DETALHES---*/
 
+    .jl-hero {
+        height: 350px;
+        display: block;
+        background-image: url('paginas/portfolio/img/hero.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
 
 }
 
