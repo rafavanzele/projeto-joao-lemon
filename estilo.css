@@ -634,6 +634,9 @@ p, label {
 
 
     /*---DETALHES---*/
+    .jl-container-size {
+        max-width: 1050px;
+    }
 
     .jl-hero {
         height: 350px;
