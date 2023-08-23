@@ -635,7 +635,7 @@ p, label {
 
     /*---DETALHES---*/
     .jl-container-size {
-        max-width: 1050px;
+        width: 1050px;
     }
 
     .jl-hero {
@@ -660,6 +660,10 @@ p, label {
         position: relative;
     }
 
+    .jl-hero-inner-content p {
+        margin-bottom: 15px;
+    }
+
     .jl-hero-inner-content:before {
         content: '';
         width: 100%;
@@ -678,6 +682,16 @@ p, label {
         display: table;
         height: 100%;
         border-right: 1px solid #2CCB69;
+    }
+
+    .jl-post p {
+        margin-bottom: 15px;
+    }
+
+    .jl-post-section {
+        width: 100%;
+        display: table;
+        padding: 40px 0;
     }
 
 }
@@ -816,6 +830,10 @@ p, label {
     font-weight: bold;
 }
 
+.jl-titulo-peq {
+    font-size: 48px;
+}
+
 .jl-titulo-medio {
     font-size: 60px;
 }
@@ -838,6 +856,10 @@ p, label {
 
 .jl-texto-preto {
     color: #000000;
+}
+
+.jl-texto-center {
+    text-align: center;
 }
 
 
