@@ -684,6 +684,11 @@ p, label {
         border-right: 1px solid #2CCB69;
     }
 
+    .jl-post {
+        width: 100%;
+        display: table;
+    }
+
     .jl-post p {
         margin-bottom: 15px;
     }
