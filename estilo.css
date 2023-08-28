@@ -704,6 +704,10 @@ p, label {
     }
 
     .jl-post-galeria {
+        display: block;
+    }
+
+    .jl-post-galeria .container {
         position: relative;
         top: -150px;
     }
