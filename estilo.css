@@ -699,6 +699,15 @@ p, label {
         padding: 40px 0;
     }
 
+    .jl-pre-galeria {
+        padding-bottom: 200px;
+    }
+
+    .jl-post-galeria {
+        position: relative;
+        top: -150px;
+    }
+
 }
 
 
