@@ -254,10 +254,13 @@
 
         var galeriaItem = document.querySelectorAll('.jl-post-galeria img')
         for (var i = 0; i < galeriaItem.length; i++) {
-        new Waypoint({
+            
+
+        new Waypoint.Inview({
             element: galeriaItem[i],
-            handler: function() {
-            notify(this.element.innerHTML + ' hit')
+            entered: function() {
+                var fullImage = this.element.getAttribute('data-src');
+                this.element.setAttribute('src', fullImage);
             }
         })
 }
