@@ -741,14 +741,14 @@ p, label {
     }
 
     .jl-galeria-frame-image {
-        width: 85%;
-        max-width: 85%;
+        width: 89%;
+        max-width: 89%;
         margin: 0 auto;
         display: block;
         z-index: 1200;
         border-radius: 30px;
         position: relative;
-        top: 20px;
+        top: 15px;
     }
 
 }
