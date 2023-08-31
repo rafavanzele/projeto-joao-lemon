@@ -730,6 +730,27 @@ p, label {
         position: relative;
     }
 
+    .jl-close-galeria {
+        width: 40px;
+        height: 40px;
+        display: block;
+        background-color: #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: -15px;
+        right: -45px;
+        border: none;
+        z-index: 1200;
+    }
+
+    .jl-close-galeria ion-icon {
+        color: #2CCB69;
+        width: 20px;
+        height: 20px;
+        line-height: 40px;
+        text-align: center;
+    }
+
     img.jl-galeria-frame {
         width: 100%;
         max-width: 100%;
