@@ -28,4 +28,15 @@ for (var c=0; c < closeGaleria.length; c++) {
 }
 
 
+//1-Identificamos o item atual no frame
+
+//2-Definir o numero do proximo item
+
+//3-Fazer o loop e identificar qual item faz match com o numero do próximo item
+
+//4-Capturar o data-src
+
+//5-Passar o data-src para a tag de img no frame
+
+
 
