@@ -730,6 +730,11 @@ p, label {
         position: relative;
     }
 
+    .jl-galeria-frame-container .jl-itens-next-prev {
+        width: 130px;
+        margin: 35px auto 0 auto;
+    }
+
     .jl-close-galeria {
         width: 40px;
         height: 40px;

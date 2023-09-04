@@ -18,6 +18,7 @@ const getImageSrc = function() {
     }
 }
 
+getImageSrc();
 
 for (var c=0; c < closeGaleria.length; c++) {
     closeGaleria[c].addEventListener('click', function() {
@@ -28,4 +29,3 @@ for (var c=0; c < closeGaleria.length; c++) {
 
 
 
-getImageSrc();
