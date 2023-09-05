@@ -21,40 +21,63 @@ const getImageSrc = function() {
         }); 
     }
 }
-
 getImageSrc();
+
 
 for (var c=0; c < closeGaleria.length; c++) {
     closeGaleria[c].addEventListener('click', function() {
         overlay.classList.remove('jl-aberto');
         frameContainer.classList.remove('jl-aberto');  
-    })
+    });
 }
 
 
 
-//CRIANDO A LÓGICA PARA BOTÃO NEXT E PREV DA GALERIA
+
+/*
+
+//LÓGICA NEXT PREV DA GALERIA MANAGE IT
+
 
 const nextItem = function() {
-    //1-Identificar o item atual no frame
+    //Identificando o item atual no frame
     var currItemNum = frameImage.getAttribute('data-index');
-   
-    //2-Definir o numero do proximo item
+
+    //Definindo o próximo item
     var nextItemNum = parseInt(currItemNum) +1;
-    
-    //3-Fazer o loop e identificar qual item faz match com o numero do próximo item
-    for (var n=0; n < galeriaImages.length; n++) {
+
+    //Fazer o loop e identificar qual item faz match com o numero do próximo item
+    for(var n = 0; n < galeriaImages.length; n++) {
         var item = galeriaImages[n];
         var itemNum = parseInt(item.getAttribute('data-item'));
 
-        if (itemNum === nextItemNum) {
-            //4-Capturar o data-src
+        if(itemNum === nextItemNum) {
+            //Capturar o data-src
             var nextSrc = item.getAttribute('data-src');
             var nextIndex = item.getAttribute('data-item');
 
-            //5-Passar o data-src para a tag de img no frame
+            //Passar o data-src para a tag de img no frame
             frameImage.setAttribute('src', nextSrc);
             frameImage.setAttribute('data-index', nextIndex);
+        }
+    }
+}
+
+
+const prevItem = function() {
+    var currItemNum = frameImage.getAttribute('data-index');
+    var prevItemNum = parseInt(currItemNum) -1;
+
+    for(var p = 0; p < galeriaImages.length; p++) {
+        var item = galeriaImages[p];
+        var itemNum = parseInt(item.getAttribute('data-item'));
+
+        if(itemNum === prevItemNum) {
+            var prevSrc = item.getAttribute('data-src');
+            var prevIndex = item.getAttribute('data-item');
+
+            frameImage.setAttribute('src', prevSrc);
+            frameImage.setAttribute('data-index', prevIndex);
         }
     }
 }
@@ -62,3 +85,9 @@ const nextItem = function() {
 btnNext.addEventListener('click', function() {
     nextItem();
 });
+
+btnPrev.addEventListener('click', function() {
+    prevItem();
+});
+
+*/
