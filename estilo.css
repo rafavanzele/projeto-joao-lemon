@@ -111,6 +111,11 @@ p, label {
     }
 }
 
+@keyframes skeletonBlur {
+    to {
+        background-position: 500% -150px;
+    }
+}
 
 
 @media screen and (min-width: 320px) {
@@ -746,9 +751,13 @@ p, label {
 
     .jl-galeria-frame-inner .jl-skeleton-loading > div {
         width: 90%;
-        background-color: #BCBCBC;
+        background-color: #bbb9b985;
         margin: 10% 0;
         border-radius: 8px;
+        background-image: url(paginas/portfolio/img/skeleton-loading-blur.svg);
+        background-repeat: no-repeat;
+        background-position: -400% -150px;
+        animation: skeletonBlur 2s infinite ease-out;
     }
 
     .jl-galeria-frame-inner .jl-skeleton-loading > div:first-child, .jl-galeria-frame-inner .jl-skeleton-loading > div:last-child {
