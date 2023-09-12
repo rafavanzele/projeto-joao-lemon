@@ -7,17 +7,36 @@ var galeriaImages = document.querySelectorAll('.jl-thumb-img');
 var closeGaleria = document.querySelectorAll('.jl-toggle-galeria');
 var btnNext = document.querySelector('.jl-item-next');
 var btnPrev = document.querySelector('.jl-item-prev');
+var skeletonLoading = document.querySelector('.jl-skeleton-loading');
 
+//
+
+
+//Open Gallery Modal
 const getImageSrc = function() {
   for (var i=0; i < galeriaImages.length; i++) {
         galeriaImages[i].addEventListener('click', function() {
             var imageSrc = this.getAttribute('data-src');
             var itemNum = this.getAttribute('data-item');
+
+            skeletonLoading.style.display = 'flex';
+
             frameImage.setAttribute('src', imageSrc);
             frameImage.setAttribute('data-index', itemNum);
 
             overlay.classList.add('jl-aberto');
             frameContainer.classList.add('jl-aberto');
+            /*currCounter.innerHTML = counterFormater(itemNum); */
+
+            var myImage = new Image();
+            myImage.src = imageSrc;
+            myImage.addEventListener('load', function() {
+                skeletonLoading.classList.add('jl-fade-out');
+                setTimeout(function(){
+                    skeletonLoading.style.display = 'none';
+                }, 2000);
+            });
+
         }); 
     }
 }

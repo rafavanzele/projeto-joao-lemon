@@ -59,7 +59,7 @@ p, label {
 
 @keyframes scaleUp {
     to {
-        transform: scale(1);
+        transform: scaleX(1);
     }
 }
 
@@ -738,7 +738,7 @@ p, label {
     .jl-galeria-frame-inner .jl-skeleton-loading {
         width: 86%;
         height: 98%;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
