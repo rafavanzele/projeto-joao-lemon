@@ -240,6 +240,28 @@ p, label {
         display: none;
     }
 
+    .jl-menu-mob {
+        width: 240px;
+        height: 100vh;
+        display: block;
+        background-color: #000000;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 1200;
+        padding: 60px 20px 20px;
+    }
+
+    .jl-menu-mob a {
+        width: 100%;
+        height: 60px;
+        display: block;
+        line-height: 60px;
+        color: #ffffff;
+        font-family: 'Open sans', sans-serif;
+        text-decoration: none;
+    }
+
     .jl-botao-contato {
         width: 48px;
         height: 48px;
@@ -821,6 +843,10 @@ p, label {
 
 
 @media screen and (min-width: 992px) {
+    .jl-menu-mob {
+        display: none;
+    }
+
     .jl-menu {
         display: table;
         float: left;
