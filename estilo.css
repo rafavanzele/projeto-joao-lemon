@@ -240,6 +240,25 @@ p, label {
         display: none;
     }
 
+    .jl-btn-menu-mob {
+        width: 45px;
+        height: 45px;
+        display: block;
+        border-radius: 50%;
+        border: none;
+        background-color: #2CCB69;
+        color: #000000;
+        position: fixed;
+        right: 30px;
+        top: 30px;
+        z-index: 1250;
+        cursor: pointer;
+    }
+
+    .jl-btn-menu-mob ion-icon {
+        vertical-align: middle;
+    }
+
     .jl-menu-mob {
         width: 240px;
         height: 100vh;
