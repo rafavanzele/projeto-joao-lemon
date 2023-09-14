@@ -870,7 +870,7 @@ p, label {
 
 
 @media screen and (min-width: 992px) {
-    .jl-menu-mob {
+    .jl-menu-mob, .jl-btn-menu-mob {
         display: none;
     }
 
