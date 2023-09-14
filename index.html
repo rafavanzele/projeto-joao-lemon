@@ -19,6 +19,7 @@
     </div>
 
     <div class="jl-overlay jl-toggle-modal"></div>
+    <div class="jl-menu-overlay jl-toggle-menu"></div>
 
     <div class="jl-modal jl-bg-preto" id="jl-modal-orcamento">
         <div class="jl-modal-header">
@@ -89,9 +90,11 @@
 
     </header>
 
-    <button class="jl-btn-menu-mob"><ion-icon name="menu-outline"></ion-icon></button>
+    <button class="jl-btn-menu-mob jl-toggle-menu">
+        <ion-icon name="menu-outline"></ion-icon>
+    </button>
 
-    <nav class="jl-menu-mob">
+    <nav class="jl-menu-mob jl-menu-is-closed">
         <a href="#">Home</a>
         <a href="paginas/portfolio.html">Portfólio</a>
         <a href="paginas/sobre.html">Sobre</a>

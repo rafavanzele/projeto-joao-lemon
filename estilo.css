@@ -143,7 +143,7 @@ p, label {
         margin-top: -45px;
     }
 
-    .jl-overlay {
+    .jl-overlay, .jl-menu-overlay {
         width: 100%;
         height: 100vh;
         display: none;
@@ -265,10 +265,18 @@ p, label {
         display: block;
         background-color: #000000;
         position: fixed;
-        right: 0;
         top: 0;
-        z-index: 1200;
         padding: 60px 20px 20px;
+        z-index: 1200;
+        transition: all 0.3s cubic-bezier(0.215, 0.610, 0.355, 1);
+    }
+
+    .jl-menu-is-open {
+        right: 0;
+    }
+
+    .jl-menu-is-closed {
+        right: -240px;
     }
 
     .jl-menu-mob a {

@@ -1,6 +1,9 @@
 //DECLARANDO VARIÁVEIS
 var btnContato = document.querySelector('.jl-botao-contato');
-var toggleModal = document.querySelectorAll('.jl-toggle-modal')
+var toggleModal = document.querySelectorAll('.jl-toggle-modal');
+var toggleMenu = document.querySelectorAll('.jl-toggle-menu');
+var menuMobile = document.querySelector('.jl-menu-mob');
+var btnMenuMobIcon = document.querySelector('.jl-btn-menu-mob ion-icon');
 
 
 //PÁGINA PRELOADER
@@ -26,12 +29,32 @@ btnContato.addEventListener('click', function() {
 
 
 
+//ABRINDO E FECHADO O MENU MOBILE
+for(var m = 0; m < toggleMenu.length; m++) {
+  toggleMenu[m].addEventListener('click', function() {
+    var overlay = document.querySelector('.jl-menu-overlay');
+    overlay.classList.toggle('jl-aberto');
+    menuMobile.classList.toggle('jl-menu-is-closed');
+    menuMobile.classList.toggle('jl-menu-is-open');
+    
+    var icon = btnMenuMobIcon.getAttribute('name');
+    
+    if (icon === 'menu-outline') {
+        btnMenuMobIcon.setAttribute('name', 'close-outline');  
+    } else {
+        btnMenuMobIcon.setAttribute('name', 'menu-outline');  
+    }
+
+  });
+}
+
+
+
 //ABRINDO E FECHANDO O MODAL DE ORÇAMENTO
 for(var i = 0; i < toggleModal.length; i++) {
     toggleModal[i].addEventListener('click', function() {
         var overlay = document.querySelector('.jl-overlay');
         var modalOrcamento = document.querySelector('#jl-modal-orcamento');
-
         overlay.classList.toggle('jl-aberto');
         modalOrcamento.classList.toggle('jl-aberto');
         modalOrcamento.classList.toggle('jl-slide-top-in');
