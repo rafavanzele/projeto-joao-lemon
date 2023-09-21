@@ -604,6 +604,14 @@ p, label {
         width: calc(100% - 35px);
     }
 
+    .jl-slider-list .jl-portfolio-item-info p {
+        text-align: center;
+    }
+
+    .jl-slider-list .jl-portfolio-item-info button {
+        margin: 0 auto;
+    }
+
     .jl-slider-list .jl-portfolio-item-thumb, .jl-portfolio-list .jl-portfolio-item-thumb {
         margin-top: 40px;
         width: 100%;
@@ -887,6 +895,7 @@ p, label {
 
     .jl-titulo-medio {
         font-size: 36px;
+        text-align: center;
     }
 
 }
@@ -1003,6 +1012,15 @@ p, label {
 
     .jl-titulo-medio {
         font-size: 48px;
+        text-align: left;
+    }
+
+    .jl-slider-list .jl-portfolio-item-info p {
+        text-align: left;
+    }
+
+    .jl-slider-list .jl-portfolio-item-info button {
+        margin: 0;
     }
 
 }
