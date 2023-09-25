@@ -168,7 +168,7 @@ var waypoint = new Waypoint({
 
   //COUNTER FORMATER (contador de slides)
 
-  var counterFormater = function(n) {
+  var counterFormatter = function(n) {
     if (n < 10) {
         return '0' + n;
     } else {
@@ -179,19 +179,19 @@ var waypoint = new Waypoint({
 
   //COUNTER ADD
   var counterAdd = function() {
-      if (currentCounter >= 0 && currentCounter < sliderTotalItems) {
+      if ((currentCounter >= 0) && (currentCounter < sliderTotalItems)) {
         currentCounter++;
-        currentSlide.innerHTML = counterFormater(currentCounter);
-        navCounter.innerHTML = counterFormater(currentCounter);
+        currentSlide.innerHTML = counterFormatter(currentCounter);
+        navCounter.innerHTML = counterFormatter(currentCounter);
       }
   }
 
   //COUNTER REMOVE
   var counterRemove = function() {
-    if (currentCounter > 1 && currentCounter <= sliderTotalItems) {
+    if ((currentCounter > 1) && (currentCounter <= sliderTotalItems)) {
       currentCounter--;
-      currentSlide.innerHTML = counterFormater(currentCounter);
-      navCounter.innerHTML = counterFormater(currentCounter);
+      currentSlide.innerHTML = counterFormatter(currentCounter);
+      navCounter.innerHTML = counterFormatter(currentCounter);
     }
 }
 
