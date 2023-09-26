@@ -620,7 +620,12 @@ p, label {
         position: relative;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button, .jl-portfolio-list .jl-portfolio-item-thumb > button {
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin: 2px auto 0;
+        float: none;
+    }
+
+    .jl-portfolio-list .jl-portfolio-item-thumb > button {
         margin-top: 2px;
         margin-right: 35px;
         float: right;
@@ -649,11 +654,11 @@ p, label {
     }
 
     .jl-slider-list .jl-portfolio-item-thumb img {
-        width: 100%;
+        width: 90%;
         max-width: 100%;
         height: auto;
         position: relative;
-        left: -35px;
+        left: 5%;
         transform: scale(0);
     }
 
@@ -921,18 +926,31 @@ p, label {
         margin-right: auto;
     }
 
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin: 2px auto 0;
+        float: none;
+    }
+
 }
 
 @media screen and (min-width: 700px) {
     .jl-home-apresentacao {
         background-size: 100%;
     }
-    
 }
 
 @media screen and (min-width: 768px) {
     .jl-home-apresentacao {
         background-size: 70%;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        left: -35px;
+        transform: scale(0);
     }
 }
 
@@ -1021,6 +1039,11 @@ p, label {
 
     .jl-slider-list .jl-portfolio-item-info button {
         margin: 0;
+    }
+
+    .jl-slider-list .jl-portfolio-item-thumb > button {
+        margin: 2px 32px auto 0;
+        float: right;
     }
 
 }
