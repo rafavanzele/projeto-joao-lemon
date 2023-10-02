@@ -478,12 +478,12 @@ p, label {
     /*---HOME PORTFÓLIO---*/
 
     .jl-portfolio-navigator {
-        width: 145px;
-        height: 400px;
+        width: 65%;
+        height: auto;
         display: table;
         position: absolute;
         left: 15px;
-        top: 25vh;
+        bottom: 15px; 
     }
 
     .jl-navigator-contador {
@@ -537,7 +537,7 @@ p, label {
         width: 80%;
         height: 45px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         background-color: #2c2c2c;
         border-radius: 23px;
@@ -575,7 +575,7 @@ p, label {
 
     .jl-slider-list {
         width: auto;
-        height: 500px;
+        height: auto;
         display: block;
         list-style: none;
     }
@@ -1033,6 +1033,13 @@ p, label {
         text-align: left;
     }
 
+    .jl-portfolio-navigator {
+        width: 145px;
+        height: 400px;
+        left: 15px;
+        top: 25vh;
+    }
+
     .jl-slider-list .jl-portfolio-item {
         display: block;
         float: left;
@@ -1044,6 +1051,9 @@ p, label {
         margin-top: 60px;
     }
 
+    .jl-itens-next-prev {
+        justify-content: center;
+    }
 
     .jl-slider-list .jl-portfolio-item-info p {
         text-align: left;
