@@ -935,6 +935,9 @@ p, label {
         float: none;
     }
 
+    .jl-portfolio-navigator {
+        width: 145px;
+    }
 }
 
 @media screen and (min-width: 700px) {
