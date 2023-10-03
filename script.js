@@ -64,14 +64,6 @@ for(var i = 0; i < toggleModal.length; i++) {
 
 
 
-var postGaleria = document.querySelector('.jl-post-galeria');
-  var postGaleriaHeight = postGaleria.clientHeight;
-
-  postGaleria.style.height = (postGaleriaHeight - 150) + 'px';
-
-
-
-
 //ANIMANDO ELEMENTOS ON SCROLL COM WAYPOINTS
 
 var myScrollDown = document.querySelector('.jl-role-abaixo');
@@ -81,7 +73,7 @@ var waypoint = new Waypoint({
      myScrollDown.classList.toggle('jl-fade-out');
     },
     offset: '60%'
-  });
+});
 
 
 

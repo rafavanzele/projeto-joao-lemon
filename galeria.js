@@ -9,7 +9,11 @@ var btnNext = document.querySelector('.jl-item-next');
 var btnPrev = document.querySelector('.jl-item-prev');
 var skeletonLoading = document.querySelector('.jl-skeleton-loading');
 
-//
+
+var postGaleria = document.querySelector('.jl-post-galeria');
+var postGaleriaHeight = postGaleria.clientHeight;
+
+postGaleria.style.height = (postGaleriaHeight - 150) + 'px';
 
 
 //Open Gallery Modal
