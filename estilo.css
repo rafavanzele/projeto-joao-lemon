@@ -173,6 +173,11 @@ p, label {
         position: relative;
     }
 
+    .jl-modal-header h1 {
+        line-height: 35px;
+        margin-bottom: 15px;
+    }
+
     .jl-close-modal {
         width: 38px;
         height: 38px;
