@@ -714,9 +714,10 @@ p, label {
 
 
     /*---DETALHES---*/
-    .jl-container-size {
-       /* width: 1050px; */
-    }
+    
+    /* .jl-container-size {
+       width: 1050px;
+    }  */
 
     .jl-hero {
         background-image: url('paginas/portfolio/img/hero.png');
