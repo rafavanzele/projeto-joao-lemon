@@ -715,11 +715,10 @@ p, label {
 
     /*---DETALHES---*/
     .jl-container-size {
-        width: 1050px;
+       /* width: 1050px; */
     }
 
     .jl-hero {
-        height: 350px;
         background-image: url('paginas/portfolio/img/hero.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -733,7 +732,8 @@ p, label {
     }
 
     .jl-hero-inner {
-        height: 350px;
+        display: table;
+        padding: 35px 0;
     }
 
     .jl-hero-inner-content {
