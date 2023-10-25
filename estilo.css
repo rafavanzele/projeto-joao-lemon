@@ -725,6 +725,13 @@ p, label {
         bottom: 0;
     }
 
+    .jl-titulo-sobre, .jl-info-sobre, .jl-premios-sobre {
+        width: 50%;
+        display: table;
+        float: left;
+        margin-bottom: 30px;
+    }
+
 
     /*---DETALHES---*/
     
@@ -943,12 +950,26 @@ p, label {
     .jl-portfolio-navigator {
         width: 145px;
     }
+
+    .jl-titulo-sobre {
+        width: 100%;
+    }
+
+    .jl-info-sobre {
+        width: 60%;
+    }
+
+    .jl-premios-sobre {
+        width: 40%;
+        padding-left: 30px;
+    }
 }
 
 @media screen and (min-width: 700px) {
     .jl-home-apresentacao {
         background-size: 100%;
     }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -1041,7 +1062,7 @@ p, label {
     }
 
     .jl-titulo-medio {
-        font-size: 48px;
+        
         text-align: left;
     }
 
@@ -1134,6 +1155,19 @@ p, label {
 
     .jl-project-stats {
         border-right: 1px solid #2CCB69;
+    }
+
+    .jl-titulo-sobre {
+        width: 100%;
+    }
+
+    .jl-info-sobre {
+        width: 60%;
+    }
+
+    .jl-premios-sobre {
+        width: 40%;
+        padding-left: 30px;
     }
 
 }
@@ -1234,7 +1268,9 @@ p, label {
     font-weight: bold;
 }
 
-
+.jl-titulo-medio {
+    font-size: 80px;
+}
 
 .jl-titulo-peq {
     font-size: 48px;
