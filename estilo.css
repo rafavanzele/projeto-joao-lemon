@@ -717,11 +717,12 @@ p, label {
 
     .jl-avatar-sobre {
         position: relative;
+        height: 400px;
     }
 
     .jl-box-img {
         position: absolute;
-        left: -15px;
+        left: 0;
         bottom: 0;
     }
 
@@ -969,7 +970,7 @@ p, label {
     .jl-home-apresentacao {
         background-size: 100%;
     }
-
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -985,6 +986,7 @@ p, label {
         left: -35px;
         transform: scale(0);
     }
+    
 }
 
 
@@ -1155,6 +1157,10 @@ p, label {
 
     .jl-project-stats {
         border-right: 1px solid #2CCB69;
+    }
+
+    .jl-avatar-sobre {
+        height: 100%;
     }
 
     .jl-titulo-sobre {
@@ -1410,11 +1416,11 @@ p, label {
 .jl-box-img {
     width: 100%;
     display: table;
+    
 }
 
 .jl-img-responsivo {
-    width: 100%;
-    max-width: 100%;
+    width: 300px;
     height: auto;
     display: block;
 }
