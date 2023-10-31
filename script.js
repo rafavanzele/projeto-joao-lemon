@@ -64,19 +64,6 @@ for(var i = 0; i < toggleModal.length; i++) {
 
 
 
-//ANIMANDO ELEMENTOS ON SCROLL COM WAYPOINTS
-
-var myScrollDown = document.querySelector('.jl-role-abaixo');
-var waypoint = new Waypoint({
-    element: myScrollDown,
-    handler: function() {
-     myScrollDown.classList.toggle('jl-fade-out');
-    },
-    offset: '60%'
-});
-
-
-
   // PORTFÓLIO SLIDER
 
   //DECLARANDO VARIÁVEIS DO SLIDER
@@ -246,7 +233,7 @@ var changeActive = function() {
 
   //ACTIONS
 
-  totalSlide.innerHTML = counterFormater(sliderTotalItems);
+  totalSlide.innerHTML = counterFormatter(sliderTotalItems);
 
   anime({
     targets: '.jl-item-ativo',
@@ -269,3 +256,17 @@ var changeActive = function() {
 
 
 
+//ANIMANDO ELEMENTOS TOPBAR
+
+var triggerTopbar = document.querySelector('.jl-trigger-topbar');
+var topbar = document.querySelector('.jl-topbar');
+var logo = document.querySelector('.jl-logo');
+
+var waypoint = new Waypoint({
+    element: triggerTopbar,
+    handler: function() {
+      topbar.classList.toggle('jl-topbar-bg');
+      logo.classList.toggle('jl-logo-shorten');
+    },
+    offset: '60px'
+});
