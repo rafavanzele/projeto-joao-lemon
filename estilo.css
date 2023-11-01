@@ -138,6 +138,16 @@ p, label {
     }
 }
 
+@keyframes logoBig {
+    from {
+        top: -30px;
+    }
+    
+    to {
+        top: 0;
+    }
+}
+
 .jl-trigger-topbar {
     width: 1px;
     height: 1px;
@@ -268,6 +278,11 @@ p, label {
         border-radius: 0 0 37px 0;
         transition: all 0.2s ease-out;
         position: relative;
+    }
+
+    
+    .jl-logo-big {
+        animation: logoBig 0.2s ease-out forwards;
     }
 
     .jl-logo-shorten {
