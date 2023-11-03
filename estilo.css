@@ -924,6 +924,29 @@ p, label {
         top: -150px;
     }
 
+    .jl-thumb-box {
+        width: auto;
+        display: block;
+        position: relative;
+    }
+
+    .jl-thumb-box:before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        z-index: 700;
+        background-color: rgba(44, 203, 105, 0.856);
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .jl-thumb-box:hover:before {
+        display: block;
+        cursor: pointer;
+    }
+
     .jl-galeria-frame-container {
         width: 270px;
         display: none;
@@ -1530,7 +1553,7 @@ p, label {
 }
 
 .jl-img-responsivo {
-    width: 300px;
+    width: 100%;
     height: auto;
     display: block;
 }
