@@ -3,7 +3,7 @@
 var overlay = document.querySelector('.jl-overlay');
 var frameImage = document.querySelector('.jl-galeria-frame-image');
 var frameContainer = document.querySelector('.jl-galeria-frame-container');
-var galeriaImages = document.querySelectorAll('.jl-thumb-img');
+var galeriaImages = document.querySelectorAll('.jl-thumb-box');
 var closeGaleria = document.querySelectorAll('.jl-toggle-galeria');
 var btnNext = document.querySelector('.jl-item-next');
 var btnPrev = document.querySelector('.jl-item-prev');
@@ -20,8 +20,8 @@ postGaleria.style.height = (postGaleriaHeight - 150) + 'px';
 const getImageSrc = function() {
   for (var i=0; i < galeriaImages.length; i++) {
         galeriaImages[i].addEventListener('click', function() {
-            var imageSrc = this.getAttribute('data-src');
-            var itemNum = this.getAttribute('data-item');
+            var imageSrc = this.querySelector('img').getAttribute('data-src');
+            var itemNum = this.querySelector('img').getAttribute('data-item');
 
             skeletonLoading.style.display = 'flex';
 
@@ -71,7 +71,7 @@ const nextItem = function() {
 
     //Fazer o loop e identificar qual item faz match com o numero do próximo item
     for(var n = 0; n < galeriaImages.length; n++) {
-        var item = galeriaImages[n];
+        var item = galeriaImages[n].querySelector('img');
         var itemNum = parseInt(item.getAttribute('data-item'));
 
         if(itemNum === nextItemNum) {
@@ -82,6 +82,10 @@ const nextItem = function() {
             //Passar o data-src para a tag de img no frame
             frameImage.setAttribute('src', nextSrc);
             frameImage.setAttribute('data-index', nextIndex);
+
+            currCounter.innerHTML = counterFormatter(nextIndex);
+
+            skeletonAnim(nextSrc);
         }
     }
 }
