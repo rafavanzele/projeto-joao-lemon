@@ -1046,6 +1046,12 @@ p, label {
         top: 15px;
     }
 
+    /* ---- 404 --- */
+    .jl-404 h1, .jl-404 p {
+        text-align: center;
+    }
+
+
     /* UTILITÁRIAS */
     .jl-titulo-grande {
         font-size: 75px;
@@ -1307,6 +1313,17 @@ p, label {
     .jl-premios-sobre {
         width: 40%;
         padding-left: 30px;
+    }
+
+    
+    /* ---- 404 ---- */
+    
+    .jl-404 h1, .jl-404 p {
+        text-align: left;
+    }
+
+    .jl-404 p {
+        margin-top: 50px;
     }
 
 }
