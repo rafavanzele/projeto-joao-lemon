@@ -1351,6 +1351,7 @@ p, label {
     transition: all 0.2s ease-out;
     text-transform: lowercase;
     position: relative;
+    text-decoration: none;
 }
 
 .jl-botao ion-icon {
