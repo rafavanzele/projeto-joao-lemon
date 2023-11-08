@@ -724,7 +724,7 @@ p, label {
         text-align: center;
     }
 
-    .jl-slider-list .jl-portfolio-item-info button {
+    .jl-slider-list .jl-portfolio-item-info .jl-botao {
         margin: 0 auto;
     }
 
@@ -738,7 +738,7 @@ p, label {
 
     
 
-    .jl-portfolio-list .jl-portfolio-item-thumb > button {
+    .jl-portfolio-list .jl-portfolio-item-thumb > .jl-botao {
         margin: 5px auto 0 auto;
         float: none;
     }
@@ -791,7 +791,7 @@ p, label {
         width: 100%;
     }
     
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info .jl-botao {
         float: none;
         margin: 0 auto;
     }
@@ -1084,7 +1084,7 @@ p, label {
         margin: 0 auto;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button {
+    .jl-slider-list .jl-portfolio-item-thumb > .jl-botao {
         margin: 2px auto 0;
         float: none;
     }
@@ -1230,7 +1230,7 @@ p, label {
         margin-top: 58px;
     }
     
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-info .jl-botao {
         float: right;
     }
 
@@ -1243,7 +1243,7 @@ p, label {
         margin-left: 58px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-info .jl-botao {
         float: left;
     }
 
@@ -1261,13 +1261,13 @@ p, label {
         left: -35px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(even) .jl-portfolio-item-thumb .jl-botao {
         margin-top: 5px;
         float: left;
         left: 35px;
     }
 
-    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb button {
+    .jl-portfolio-list .jl-portfolio-item:nth-child(odd) .jl-portfolio-item-thumb .jl-botao {
         margin-top: 5px;
         float: right;
         margin-right: 35px;
@@ -1281,11 +1281,11 @@ p, label {
         text-align: left;
     }
 
-    .jl-slider-list .jl-portfolio-item-info button {
+    .jl-slider-list .jl-portfolio-item-info .jl-botao {
         margin: 0;
     }
 
-    .jl-slider-list .jl-portfolio-item-thumb > button {
+    .jl-slider-list .jl-portfolio-item-thumb > .jl-botao {
         margin: 2px 32px auto 0;
         float: right;
     }
